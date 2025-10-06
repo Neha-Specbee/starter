@@ -1,0 +1,23 @@
+---
+title: "Changelog"
+---
+
+<Update label="Key People, v2 Company APIs & v3 Company Name Lookup Deprecated" description="Over 3 years ago" tags={["Deprecated"]}>
+On 6/30/22, FullContact has sunset its v2 Company APIs along with v3 Company Name Lookup and Key People.
+</Update>
+
+<Update label="Email Hash Activity" description="Over 3 years ago" tags={["Added"]}>
+Released: Email Hash Activity Insights Add-on will return additional insights for the hashed versions of known email addresses associated with the profile including first seen and last seen timestamps along with an associated activity score of `HIGH`, `MEDIUM` or `LOW`. The returned hashed email addresses and associated insights can then be used as identity verification and fraud signals or for enhanced marketing activation efforts. The max number of hashed email addresses that can be returned are 20.
+</Update>
+
+<Update label="Adding generatePID" description="Almost 4 years ago" tags={["Added"]}>
+- An optional attribute in the API request body for Resolve, that is by default set to 'false'
+- If this header is set to 'true', a generatePid will be returned for all API responses regardless of whether or not FullContact can find the data inputs within the Identity Graph at the moment of the API request
+- Supported in the Map + Resolve API call as an optional attribute
+- This has the same number of characters as a personId - 48 chars
+</Update>
+
+<Update label="Improve Person ID (PID) Selection" description="Almost 4 years ago" tags={["Resolved"]}>
+To leverage the intelligence in our graph to always make the best decision regarding finding and persistently maintaining the identity of an individual, we improved the selection of the appropriate Person ID when queried by our customers.
+</Update>
+

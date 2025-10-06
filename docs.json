@@ -1,68 +1,87 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "FullContact Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#404aaa",
+    "light": "#58bedf",
+    "dark": "#58bedf"
   },
-  "favicon": "/favicon.svg",
+  "appearance": {
+    "default": "light"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "favicon": "/favicon.png",
+  "fonts": {
+    "heading": {
+      "family": "Rubik"
+    },
+    "body": {
+      "family": "Rubik"
+    }
+  },
   "navigation": {
-    "tabs": [
+    "versions": [
       {
-        "tab": "Guides",
-        "groups": [
+        "version": "v3",
+        "tabs": [
           {
-            "group": "Getting started",
+            "tab": "Home",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "index"
             ]
           },
           {
-            "group": "Customization",
+            "tab": "Guides",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              {
+                "group": "Getting started",
+                "pages": [
+                  "/docs/getting-started",
+                  "/docs/intro-to-fc"
+                ]
+              },
+              {
+                "group": "How-to Guides",
+                "pages": [
+                  {
+                    "group": "Run a Test",
+                    "pages": [
+                      "/docs/run-a-match-test"
+                    ]
+                  },
+                  "/docs/generate-an-api-key",
+                  "/docs/webtag-installation-instructions"
+                ]
+              },
+              {
+                "group": "Integrations",
+                "pages": [
+                  "/docs/compatibility-matrix",
+                  {
+                    "group": "End-to-End Integration Guides",
+                    "pages": [
+                      "/docs/end-to-end-guides",
+                      "/docs/google-tag-manager",
+                      "/docs/google-analytics"
+                    ]
+                  }
+                ]
+              },
+              {
+                "group": "Customer Recognition",
+                "pages": [
+                  "/docs/customer-recognition-overview"
+                ]
+              }
             ]
           },
           {
-            "group": "Writing content",
+            "tab": "Changelog",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "/changelog"
             ]
           }
         ]
@@ -71,52 +90,52 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "FAQ",
+          "href": "https://www.fullcontact.com/faq",
+          "icon": "circle-question"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Contact Us",
+          "href": "https://www.fullcontact.com/contact/",
+          "icon": "envelope"
         }
       ]
     }
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "https://www.fullcontact.com"
   },
   "navbar": {
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://support.fullcontact.com/portal"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Let's Talk",
+      "href": "https://www.fullcontact.com/contact/"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "youtube": "https://www.youtube.com/user/FullContactAPI",
+      "linkedin": "https://www.linkedin.com/company/fullcontact-inc-"
     }
   }
 }

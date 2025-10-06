@@ -1,0 +1,64 @@
+---
+title: "Interacting with FullContact™"
+---
+
+## The FullContact Platform
+
+The FullContact Platform allows customers to track usage, generate API keys, run simple Enrich queries, view Resolve stats, generate customer recognition tags, and interact with the FullContact product in several other ways. The Platform is the entry point into the first customer interaction and where we began working with FullContact.
+
+### Getting Set Up
+
+<Steps>
+<Step>
+If you don't have an account, start by creating one in the [FullContact Platform Registration Page](https://platform.fullcontact.com/register). Otherwise, start by [logging in.](https://platform.fullcontact.com/login)
+</Step>
+<Step>
+Our [API Search](https://platform.fullcontact.com/try-it-out) tool will give you an idea of the data you can receive from the Enrich API.
+
+<Frame>
+[![API Search](https://fullcontact-cx-static-assets.s3.amazonaws.com/docs/34ASR9PEMk/88HPvGTJbwfzqm.png)](https://platform.fullcontact.com/try-it-out)
+</Frame>
+
+This feature also gives a preview of paid [Insights Bundles](https://platform.fullcontact.com/docs/apis/enrich/person-insights-bundles) (which you can toggle on/off), so you can see what insights best apply to your goals.
+
+<Tip>
+**Tip:** 
+
+Prefer a developer’s view? Click “View Code” to see an example curl, javascript, java, or python example as well as an example JSON response
+</Tip>
+
+**Step 2b:** Want to see how well FullContact can enrich your contact data? Our [Match Test Tool](https://platform.fullcontact.com/reports/instructions) is a great way to see the results of how FullContact’s Enrich and Resolve match up against your existing customer data. Run a real test using your data to understand what your match and fill rates are by each Insights Bundle.
+
+<Frame>
+[![Match Test Tool](https://fullcontact-cx-static-assets.s3.amazonaws.com/docs/34ASR9PEMk/3efkgCPmdh5iQW.png)](https://platform.fullcontact.com/reports/instructions)
+</Frame>
+
+
+Learn more about our match test tool [here](https://platform.fullcontact.com/reports/instructions)
+
+If you’re comfortable with an API and making HTTPS calls, **continue to step 3**. If not, no worries! Reach out to your sales representative or [customer support](https://support.fullcontact.com/portal/en/kb/articles/getting-started-with-enrich-data-delivery) so we can help you get set up with batch exports!
+
+</Step>
+<Step title="Next Steps with FullContact APIs">
+FullContact's APIs have been developed with speed and scale in mind. You can query us concurrently (100 req./s) and quickly (< 100 ms response time) to work through your prospect and customer lists in no time!
+
+FullContact can accept one or many input fields representing physical (name + address, phone number, etc.) and digital (Hashed Emails, Mobile Ad IDs, social handles, etc.) attributes of a person. Read more about accepted inputs [here](https://docs.fullcontact.com/docs/multi-field-request).
+
+- names + postal address
+- clear text and hashed email addresses (personal and business)
+- phone numbers
+- Mobile Ad IDs (MAIDs)
+- more
+</Step>
+</Steps>
+
+These identifiers locate an individual within the Identity Graph. Depending on the type of request, we will return an appropriate response.
+
+In the overview sections you'll find ways to quickly jump into our API after generating an API Key:
+
+<Columns cols={2}>
+<Card title="Enrich Overview" horizontal icon="chart-line" href="https://docs.fullcontact.com/docs/enrich-overview" />
+<Card title="Resolve Overview" horizontal icon="puzzle-piece" href="https://docs.fullcontact.com/docs/resolve-overview" />
+<Card title="Identity Streme Overview" horizontal icon="user" href="https://docs.fullcontact.com/docs/identity-streme-overview" />
+<Card title="Verify Overview" horizontal icon="circle-check" href="https://docs.fullcontact.com/docs/verify-overview" />
+</Columns>

@@ -1,0 +1,32 @@
+---
+title: "Run a Match Test"
+sidebarTitle: "Overview"
+description: "Want to run a test of FullContact's technology and data before you sign up? <br /> No problem - we love to prove our value! We have many standard ways that you can test our performance."
+---
+
+## Before Running the Test
+
+In order to ensure the best results when running any testing, we recommend you follow  
+these simple guidelines when preparing your audience file:
+
+1. Your audience file should be in .CSV format. Here is a template from [FullContact’s Platform](https://platform.fullcontact.com/match/Input_Fields_Template.csv?v=db61f5303ad4e239d0a6a56fb9eee6b4).
+2. Your list should be a random sample of your customers, with at least 100 records and up to 200k.
+	- A truly random sample will provide the most accurate results when running a match test. We do not recommend running match tests on your best or worst customer records, as that will skew your results.
+	- Need a larger sample analyzed? Reach out to your sales representative
+3. We recommend that you provide as many acceptable customer inputs as possible, in the correct formatting.
+
+## Acceptable Inputs and Formatting
+
+<Note>
+**Note:**
+
+Adhering to these guidelines to prepare for running your match tests will help us provide the most comprehensive view of your data against our Insights Bundles.
+</Note>
+
+| Input | Formatting |
+| --- | --- |
+| **Email Address(es)**  Clear text, MD5, SHA-1 or SHA-256  - Must generate hashed emails as lowercase after removing spacing before and after the hash\_ | Clear Text: [jane.smith@gmail.com](https://docs.fullcontact.com/docs/)  MD5 Email Hash: 0e75c688a5e3cb2a3027ae4d5a90af8b  SHA-1 Email Hash: b4eba69f87560d138b7cc6ed512283c40e0bf226  SHA-256 Email Hash: f4a73f4a5b069fed3e8ff8f7d9784e012db1fd5d63cfd3ad5582c86588defcd3 |
+| **Phone Number(s)**  E164 Formatting recommended | +13035555555 |
+| **Social Profile URL**  Full URL is recommended over just   username | linkedin.com/in/jane-smith   twitter.com/janesmith |
+| **Name/Address**  Both name and address must be   present   Street address should   be parsed into Address Line 1 and   Address Line 2 | Acceptable Combinations for Location:  - location.addressLine1 + location.city + location.region - location.addressLine1 + location.city + location.regionCode - location.addressLine1 + location.postalCodeAcceptable Combinations for Name: - name.full - name.given + name.family |
+| **Mobile Advertising ID**  Android Advertising IDs (AAID) or   Identifier for Advertisers (IDFA)   mobile IDs | ape2ch30-pifn-cbvi-30yy-nia-zex7aw5u |
