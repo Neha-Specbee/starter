@@ -1,9 +1,9 @@
 ---
 mode: "custom"
-title: "Index"
+title: "FullContact Developer Hub"
 ---
 
-<div className="relative w-full flex items-center justify-center" style={{ height: '26rem', overflow: 'hidden'}}>
+<div className="relative w-full flex items-center hover:underline justify-center h-[26rem] overflow-hidden">
 
 <div id="background-div" className="absolute inset-0 h-full bg-[#1e1c38] bg-cover bg-center"></div>
 
@@ -17,104 +17,172 @@ title: "Index"
 >
 </div>
 
-<div style={{ position: 'absolute', textAlign: 'center', padding: '0 1rem' }}>
+<div className="absolute text-center px-4">
   <div
-    className="text-5xl font-bold w-full mt-12 text-white"
+    className="text-5xl font-medium w-full text-white"
   >
     The FullContact™ Developer Hub
   </div>
 
-    <p className="text-lg" style={{  fontWeight: '500' , maxWidth: '40rem', margin: '0 auto', marginTop: '0.5rem'}}>
+    <p className="text-lg text-left max-w-2xl mt-4">
       Welcome to the FullContact™ developer hub. You'll find comprehensive guides and documentation to help you start working with FullContact™ as quickly as possible, as well as support if you get stuck. Let's jump right in!    
     </p>
 
-    <div className="flex items-center justify-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
-      <button
-        type="button"
-        className="hidden w-full lg:flex items-center text-sm leading-6 py-4 pl-4 pr-4 text-gray-500 rounded-full"
-        id="home-search-entry"
-        style={{
-          marginTop: '2rem',
-          maxWidth: '40rem',
-          background: '#FFF',
-          boxShadow: '0px 1px 4px 0px rgba(8, 9, 10, 0.25), 0px 0px 0px 4px rgba(255, 255, 255, 0.20)',
-          cursor: 'pointer',
-          textAlign: 'left',
-        }}
-        onClick={()=> document.getElementById('search-bar-entry').click()}
-      >
-        <svg
-          className="h-4 w-4 ml-1.5 flex-none bg-primary hover:bg-gray-600 dark:bg-primary-dark dark:hover:bg-white/70"
-          style={{
-          marginRight: '0.5rem',
-          maskImage:
-            'url("https://mintlify.b-cdn.net/v6.5.1/solid/magnifying-glass.svg")',
-          maskRepeat: 'no-repeat',
-          maskPosition: 'center center',
-          }}
-        />
-        Search or ask...
-      </button>
-    </div>
+    <button className='bg-white text-black px-4 py-2 mt-4 rounded-md flex flex-row items-center gap-2'>
+      <Icon icon="book-open" color="black" />
+      <a href="https://docs.fullcontact.com/docs">
+      Documentation
+      </a>
+    </button>
+
   </div>
 </div>
 
-<div
-  style={{marginTop: '2rem', marginBottom: '8rem', maxWidth: '70rem', marginLeft: 'auto',
-  marginRight: 'auto', paddingLeft: '1.25rem',
-  paddingRight: '1.25rem' }}
->
+<div className="mt-8 mb-32 max-w-[70rem] mx-auto px-5">
 <Columns cols={3}>
   <Card title="Getting Started" icon="rocket-launch">
-    <Card title="Introduction to FullContact™" icon="book-open" horizontal href="https://docs.fullcontact.com/docs/getting-started" />
-    <Card title="Interacting with FullContact™" icon="pen" horizontal href="https://docs.fullcontact.com/docs/intro-to-fc" />
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/getting-started">Introduction to FullContact™</a>
+    <Icon icon="arrow-right" />
+    </button>
+    
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/intro-to-fc">Interacting with FullContact™</a>
+    <Icon icon="arrow-right" />
+    </button>
  </Card>
 
   <Card title="How-to Guides" icon="books">
-    <Card title="Run a Test" icon="play" horizontal href="https://docs.fullcontact.com/docs/run-a-match-test" />
-    <Card title="Data Delivery" icon="database" horizontal href="https://docs.fullcontact.com/docs/data-delivery" />
-    <Card title="Generate an API Key" icon="key" horizontal href="https://docs.fullcontact.com/docs/generate-an-api-key" />
-    <Card title="View More..." icon="arrow-right" horizontal href="https://docs.fullcontact.com/docs/run-a-match-test" />
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/run-a-match-test">Run a Test</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/data-delivery">Data Delivery</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/generate-an-api-key">Generate an API Key</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/run-a-match-test">View More...</a>
+    <Icon icon="arrow-right" />
+    </button>
   </Card>
 
   <Card title="Interactions" icon="person-circle-plus">
-    <Card title="Compatibility Matrix" icon="chart-line" horizontal href="https://docs.fullcontact.com/docs/compatibility-matrix" />
-    <Card title="End-to-End Integration Guides" icon="books" horizontal href="https://docs.fullcontact.com/docs/end-to-end-guides" />
-    <Card title="Snowflake" icon="snowflake" horizontal href="https://docs.fullcontact.com/docs/snowflake-integration" />
-  </Card>
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/compatibility-matrix">Compatibility Matrix</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/end-to-end-guides">End-to-End Integration Guides</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/snowflake-integration">Snowflake Integration</a>
+    <Icon icon="arrow-right" />
+    </button>
+    </Card>
 
   <Card title="Customer Recognition" icon="person-circle-plus">
-    <Card title="Customer Recognition Overview" icon="book-open" horizontal href="https://docs.fullcontact.com/docs/customer-recognition-overview" />
-    <Card title="Customer Recognition Acceptable Use Policies" icon="user-shield" horizontal href="https://docs.fullcontact.com/docs/customer-rec-aup" />
-    <Card title="FullContact Consent Management Feature" icon="user-gear" horizontal href="https://docs.fullcontact.com/docs/fullcontact-consent-management-feature" />
-    <Card title="View More..." icon="arrow-right" horizontal href="https://docs.fullcontact.com/docs/customer-recognition-overview" />
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/customer-recognition-overview">Customer Recognition Overview</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/customer-rec-aup">Customer Recognition Acceptable Use Policies</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/fullcontact-consent-management-feature">FullContact Consent Management Feature</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/customer-recognition-overview">View More...</a>
+    <Icon icon="arrow-right" />
+    </button>
   </Card>
 
   <Card title="Acumen" icon="handshake">
-    <Card title="Acumen Overview" icon="book-open" horizontal href="https://docs.fullcontact.com/docs/acumen-overview" />
-    <Card title="Acumen API" icon="code" horizontal href="https://docs.fullcontact.com/docs/acumen-lead-details-via-api" />
-    <Card title="FAQs" icon="circle-question" horizontal href="https://docs.fullcontact.com/docs/faqs" />
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/acumen-overview">Acumen Overview</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/acumen-lead-details-via-api">Acumen API</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/faqs">FAQs</a>
+    <Icon icon="arrow-right" />
+    </button>
   </Card>
   
   <Card title="Enrich" icon="chart-line">
-    <Card title="Enrich Overview" icon="book-open" horizontal href="https://docs.fullcontact.com/docs/enrich-overview" />
-    <Card title="Getting Started with Enrich" icon="rocket-launch" horizontal href="https://docs.fullcontact.com/docs/getting-started-with-enrich-1" />
-    <Card title="Person Insights Bundles" icon="user-plus" horizontal href="https://docs.fullcontact.com/docs/person-insights-bundles" />
-    <Card title="View More..." icon="arrow-right" horizontal href="https://docs.fullcontact.com/docs/enrich-overview" />
-  </Card>
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/enrich-overview">Enrich Overview</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/getting-started-with-enrich-1">Getting Started with Enrich</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/person-insights-bundles">Person Insights Bundles</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/enrich-overview">View More...</a>
+    <Icon icon="arrow-right" />
+    </button>
+    </Card>
 
   <Card title="Identity Streme" icon="user">
-    <Card title="Identity Streme Overview" icon="book-open" horizontal href="https://docs.fullcontact.com/docs/identity-streme-overview" />
-    <Card title="Getting Started with Identity Streme" icon="rocket-launch" horizontal href="https://docs.fullcontact.com/docs/getting-started-with-identity-streme" />
-    <Card title="Multi Field Request" icon="code-merge" horizontal href="https://docs.fullcontact.com/docs/multi-field-request-2" />
-    <Card title="View More..." icon="arrow-right" horizontal href="https://docs.fullcontact.com/docs/identity-streme-overview" />
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/identity-streme-overview">Identity Streme Overview</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/getting-started-with-identity-streme">Getting Started with Identity Streme</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/multi-field-request-2">Multi Field Request</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/identity-streme-overview">View More...</a>
+    <Icon icon="arrow-right" />
+    </button>
   </Card>
 
   <Card title="Resolve" icon="puzzle-piece">
-    <Card title="Resolve Overview" icon="book-open" horizontal href="https://docs.fullcontact.com/docs/resolve-overview" />
-    <Card title="Getting Started with Resolve" icon="rocket-launch" horizontal href="https://docs.fullcontact.com/docs/getting-started-with-resolve" />
-    <Card title="Multi Field Request" icon="code-merge" horizontal href="https://docs.fullcontact.com/docs/multi-field-request-1" />
-    <Card title="View More..." icon="arrow-right" horizontal href="https://docs.fullcontact.com/docs/resolve-overview" />
+    <br />
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/resolve-overview">Resolve Overview</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/getting-started-with-resolve">Getting Started with Resolve</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/multi-field-request-1">Multi Field Request</a>
+    <Icon icon="arrow-right" />
+    </button>
+    <button className="flex items-center hover:underline text-start gap-2 mt-2">
+    <a href="https://docs.fullcontact.com/docs/resolve-overview">View More...</a>
+    <Icon icon="arrow-right" />
+    </button>
   </Card>
 </Columns>
 
